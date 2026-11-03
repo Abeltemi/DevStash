@@ -499,6 +499,11 @@ Instrument product events with privacy-conscious, minimal metadata. Suggested ea
 - [Tailwind CSS documentation](https://tailwindcss.com/docs)
 - [shadcn/ui documentation](https://ui.shadcn.com/docs)
 
+## 13 Screenshots
+Refer to the screenshots below as a base for the dashboard UI. It doesn't have to be exact, use it as a reference:
+- @context/screenshots/dashboard-ui-main.png
+- @context/screenshots/dashboard-ui-drawer.png
+
 ---
 
 *This document consolidates the planning notes into an implementation-oriented draft. Pricing, provider choices, quotas, and policy details are proposals that should be confirmed before launch.*
