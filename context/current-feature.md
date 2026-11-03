@@ -1,7 +1,7 @@
 # Current Feature
 
 <!-- Feature name and short  description -->
-**Dashboard UI Phase 1** — Phase 1 of 3 for the dashboard UI layout: set up ShadCN UI, the `/dashboard` route, the main layout and the top bar, with placeholders for the sidebar and main area.
+**Dashboard UI Phase 2** — Phase 2 of 3 for the dashboard UI layout: build the collapsible sidebar with item type links, favorite and recent collections, and the user avatar area, using mock data until a database is implemented.
 
 ## Status
 <!-- Not Started | In Progress | Completed -->
@@ -12,13 +12,15 @@ Completed
 
 ## Notes
 <!-- Any extra notes  -->
-Full spec: @context/features/dashboard-phase-1-spec.md
+Full spec: @context/features/dashboard-phase-2-spec.md
+
+Use the screenshot for how it should look. Import data directly from the mock data file until a database is implemented.
 
 References:
 - @context/screenshots/dashboard-ui-main.png
 - @context/project-overview.md
 - @src/lib/mock-data.ts
-- @context/features/dashboard-phase-2-spec.md
+- @context/features/dashboard-phase-1-spec.md
 - @context/features/dashboard-phase-3-spec.md
 
 ## History
@@ -32,3 +34,12 @@ References:
   - Dark mode by default
   - Top bar with search and new item button (display only)
   - Placeholder for sidebar and main area, with an h2 for "Sidebar" and "Main"
+- **Dashboard UI Phase 2** (Completed) — Built on `feature/dashboard-phase-2`.
+  - Collapsible sidebar (full width to icon rail on desktop)
+  - Items/types with links to `/items/TYPE` (eg. `/items/snippets`)
+  - Favorite collections
+  - Most recent collections
+  - Favorite and recent collection sections individually collapsible
+  - User avatar area at the bottom
+  - Drawer icon to open/close sidebar
+  - Always a drawer on mobile view

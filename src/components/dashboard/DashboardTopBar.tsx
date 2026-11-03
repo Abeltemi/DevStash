@@ -1,11 +1,42 @@
-import { Plus, Search } from "lucide-react";
+import { PanelLeft, Plus, Search } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
-export function DashboardTopBar() {
+interface DashboardTopBarProps {
+  isSidebarCollapsed: boolean;
+  onToggleSidebar: () => void;
+  onOpenDrawer: () => void;
+}
+
+export function DashboardTopBar({
+  isSidebarCollapsed,
+  onToggleSidebar,
+  onOpenDrawer,
+}: DashboardTopBarProps) {
   return (
     <header className="flex h-16 shrink-0 items-center gap-3 border-b px-4 md:px-6">
+      <Button
+        type="button"
+        variant="ghost"
+        size="icon-lg"
+        aria-label="Open sidebar"
+        onClick={onOpenDrawer}
+        className="md:hidden"
+      >
+        <PanelLeft aria-hidden="true" />
+      </Button>
+      <Button
+        type="button"
+        variant="ghost"
+        size="icon-lg"
+        aria-label={isSidebarCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+        aria-expanded={!isSidebarCollapsed}
+        onClick={onToggleSidebar}
+        className="hidden md:inline-flex"
+      >
+        <PanelLeft aria-hidden="true" />
+      </Button>
       <div className="relative w-full max-w-2xl">
         <Search
           aria-hidden="true"
