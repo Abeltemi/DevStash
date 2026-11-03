@@ -11,7 +11,8 @@ This is phase 1 of 3 for the dashboard UI layout. Use the screenshot referenced 
 - Dashboard route at /dashboard
 - Main dashboard layout and any global styles
 - Dark mode by default
-- Top bar with search and new item button (display only)
+- Top bar with search, notification icon and profile icon (display only)
+- New item button in the main area page header, next to the greeting, not in the top bar (display only)
 - Placeholder for sidebar and main area. Just add an h2 with "Sidebar" and "Main" for now.
 
 ## References

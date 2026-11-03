@@ -1,7 +1,7 @@
 # Current Feature
 
 <!-- Feature name and short  description -->
-**Dashboard UI Phase 2** — Phase 2 of 3 for the dashboard UI layout: build the collapsible sidebar with item type links, favorite and recent collections, and the user avatar area, using mock data until a database is implemented.
+**Dashboard UI Phase 3** — Phase 3 of 3 for the dashboard UI layout: build the main area with stats cards, recent collections, pinned items, and recent items, using mock data until a database is implemented.
 
 ## Status
 <!-- Not Started | In Progress | Completed -->
@@ -12,7 +12,7 @@ Completed
 
 ## Notes
 <!-- Any extra notes  -->
-Full spec: @context/features/dashboard-phase-2-spec.md
+Full spec: @context/features/dashboard-phase-3-spec.md
 
 Use the screenshot for how it should look. Import data directly from the mock data file until a database is implemented.
 
@@ -21,7 +21,7 @@ References:
 - @context/project-overview.md
 - @src/lib/mock-data.ts
 - @context/features/dashboard-phase-1-spec.md
-- @context/features/dashboard-phase-3-spec.md
+- @context/features/dashboard-phase-2-spec.md
 
 ## History
 <!--Keep this updated. Earliest to latest -->
@@ -43,3 +43,11 @@ References:
   - User avatar area at the bottom
   - Drawer icon to open/close sidebar
   - Always a drawer on mobile view
+- **Dashboard UI Phase 3** (Completed) — Built on `feature/dashboard-phase-3`.
+  - The main area to the right
+  - Recent collections
+  - Pinned Items
+  - 10 Recent items
+  - 4 stats cards at the top for number of items, collections, favorite items and favorite collections (Not in screenshot)
+  - Phase 1 correction: moved the new item button from the top bar to the main area page header
+  - Phase 1 correction: added notification and profile icons to the right of the top bar; search stays in the top bar

@@ -1,7 +1,9 @@
-import { PanelLeft, Plus, Search } from "lucide-react";
+import { Bell, PanelLeft, Search } from "lucide-react";
 
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { currentUser } from "@/lib/mock-data";
 
 interface DashboardTopBarProps {
   isSidebarCollapsed: boolean;
@@ -49,10 +51,14 @@ export function DashboardTopBar({
           className="h-9 pl-9"
         />
       </div>
-      <Button type="button" size="lg" className="ml-auto shrink-0">
-        <Plus aria-hidden="true" />
-        New item
-      </Button>
+      <div className="ml-auto flex shrink-0 items-center gap-2">
+        <Button type="button" variant="ghost" size="icon-lg" aria-label="Notifications">
+          <Bell aria-hidden="true" />
+        </Button>
+        <Avatar title={currentUser.name}>
+          <AvatarFallback>{currentUser.initials}</AvatarFallback>
+        </Avatar>
+      </div>
     </header>
   );
 }
